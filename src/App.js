@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Films from './Films';
 import Navbar from './Navbar';
+import NewPoll from './NewPoll';
 class App extends Component {
   state={
     films:[
@@ -34,11 +35,16 @@ class App extends Component {
       }
     ]
   }
+  newPoll=(poll)=>{
+    let filming=[...this.state.films,poll]
+    console.log(filming)
+  }
   render() {
     return (
       <div>
       <Navbar />
       <Films films={ this.state.films } />
+      <NewPoll newPoll={ this.newPoll }/>
       </div>
     );
   }

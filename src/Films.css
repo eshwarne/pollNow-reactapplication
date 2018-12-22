@@ -1,8 +1,7 @@
 #pollContainer{
-    text-transform: uppercase;
-
     background-color:white !important;
-    margin:10% auto;
+    margin:0 auto;
+    margin-top: 20px;
     padding: 10px;
     border: 2px solid grey;
     height:100%;
@@ -13,7 +12,6 @@
     font-weight:bold;
 }
 .filmElement{
-
     border:1px solid black;
     padding:20px;
 }

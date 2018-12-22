@@ -1,17 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './navbar.css';
-class Navbar extends Component{
-    render(){
+const Navbar=(props)=>{
         return(
             <div id="navbar">
-                <a href="#" class="leftNav">Film Polls</a>
-                <a href="#" class="leftNav">Political Polls</a>
-                <a href="#" class="leftNav">Educational Polls</a>
-                <a href="#" class="leftNav">Business polls</a>
-                <a href="#" class="rightNav">Contact Us</a>
-                <a href="#" class="rightNav">Donate</a>
+                <a href="#" className="leftNav">Film Polls</a>
+                <a href="#" className="leftNav">Political Polls</a>
+                <a href="#" className="leftNav">Educational Polls</a>
+                <a href="#" className="leftNav">Business polls</a>
+                <a href="#" className="rightNav">Contact Us</a>
+                <a href="#" className="rightNav">Donate</a>
             </div>
         )
-    }
 }
 export default Navbar;

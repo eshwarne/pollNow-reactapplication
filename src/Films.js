@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Films.css';
-class Films extends Component {
-    render(){
-        const { films }=this.props;
+const Films=(props)=>{
+        const { films }=props;
         const filmList=films.map((film)=>{
             return (
-                <div class="filmElement">
-                <p class="title">Title : { film.name }</p>
-                <p class="releasedYear">Released Year : {film.releasedYear }</p>
+                <div className="filmElement" key={ film.key }>
+                <p className="title">Title : { film.name }</p>
+                <p className="releasedYear">Released Year : {film.releasedYear }</p>
                 <form>
                     <label>SELECT AN OPTION</label><br/>
                     <input type="radio" name="poll" value="Good"></input> GOOD <br></br>
@@ -21,7 +20,5 @@ class Films extends Component {
             {filmList} 
             </div>
         )
-
-    }
 }
 export default Films;
