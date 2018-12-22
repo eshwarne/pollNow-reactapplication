@@ -1,0 +1,18 @@
+#pollContainer{
+
+    background-color:white !important;
+    margin:10% auto;
+    padding: 10px;
+    border: 2px solid grey;
+    height:100%;
+    width:400px;
+}
+.title{
+    font-size: 14pt;
+    font-weight:bold;
+}
+.filmElement{
+
+    border:1px solid black;
+    padding:20px;
+}

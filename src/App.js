@@ -35,9 +35,8 @@ class App extends Component {
   }
   render() {
     return (
-      <div id="pollContainer">
+    
       <Films films={ this.state.films } />
-      </div>
       
     );
   }
