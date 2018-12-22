@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Films from './Films';
+import Navbar from './Navbar';
 class App extends Component {
   state={
     films:[
@@ -35,9 +36,10 @@ class App extends Component {
   }
   render() {
     return (
-    
+      <div>
+      <Navbar />
       <Films films={ this.state.films } />
-      
+      </div>
     );
   }
 }
